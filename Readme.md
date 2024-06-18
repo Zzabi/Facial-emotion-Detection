@@ -31,7 +31,7 @@ Follow these steps to install and run the project:
    ```
 2. **Create and activate virtual environment:**
    ```bash
-   conda create -n fer python=3.9.* anaconda
+   conda create -n fer python=3.9.4
    conda activate fer
    ```
 3. **Install the required dependencies:**
@@ -43,16 +43,16 @@ Follow these steps to install and run the project:
 
 5. Train the model (change the no of epochs as required)
    ```bash
-   python main.py
+   python train.py
    ```
 
 ## Usage
 
 1. **Run the prediction script:**
    ```bash
-   python predict.py --path path/to/your/image.jpg # image
-   python predict.py --path path/to/your/video.mp4 # video
-   python predict.py --path 1 #realtime
+   python detect.py --img path/to/your/image.jpg # image
+   python detect.py --vid path/to/your/video.mp4 # video
+   python detect.py --cam #realtime
    ```
 ## Screenshots
 
